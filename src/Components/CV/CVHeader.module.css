@@ -1,0 +1,56 @@
+.cv-header {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 45px;
+}
+
+.fb-icon {
+  margin-right: 15px;
+}
+
+.job-title {
+  display: flex;
+  padding: 10px;
+  width: 370px;
+  margin-right: auto;
+}
+
+.job-title input {
+  font-size: 25px;
+  width: 300px;
+  border-style: solid;
+  padding-left: 10px;
+}
+
+.job-title input:focus {
+  outline: none !important;
+}
+
+.job-title input:focus::placeholder {
+  color: transparent;
+}
+
+.job-title input,
+.job-title {
+  border-style: none;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.focus {
+  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.profile-pic {
+  height: 47px;
+  width: 47px;
+  margin-right: 10px;
+}
+
+.name {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #1f7bf7;
+  margin-right: 125px;
+}

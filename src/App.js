@@ -1,8 +1,12 @@
-import './App.css';
+import Header from './Components/Layout/Header';
+import classes from './App.module.css';
+import CV from './Components/CV/CV';
 
 function App() {
   return (
-    <div className="App">
+    <div className={classes.App}>
+      <Header />
+      <CV />
     </div>
   );
 }
