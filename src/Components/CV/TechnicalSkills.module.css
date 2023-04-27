@@ -1,0 +1,33 @@
+.title {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border: none;
+}
+
+.title:focus,
+.skills:focus {
+  outline: none !important;
+}
+
+.skills {
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  color: #636468;
+  line-height: 23px;
+  border: none;
+  resize: none;
+}
+
+.hr {
+  border-top: solid 2px #63646846;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+}
+
+.wrapper {
+  padding: 20px;
+}
