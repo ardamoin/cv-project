@@ -1,0 +1,28 @@
+.title {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.title::-webkit-input-placeholder {
+    color: black;
+}
+
+.title:focus,
+.skills:focus {
+  outline: none !important;
+}
+
+.skills {
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  color: #636468;
+  line-height: 23px;
+  border: none;
+  resize: none;
+  margin-bottom: 10px;
+}

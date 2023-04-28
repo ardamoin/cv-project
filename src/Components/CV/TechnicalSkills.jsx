@@ -17,7 +17,6 @@ const TechnicalSkills = () => {
         type="text"
         defaultValue="Languages"
         className={classes.title}
-        maxLength="17"
       />
       <br />
       <textarea
@@ -36,7 +35,6 @@ const TechnicalSkills = () => {
         type="text"
         defaultValue="Technologies"
         className={classes.title}
-        maxLength="17"
       />
       <br />
       <textarea
