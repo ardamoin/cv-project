@@ -31,3 +31,10 @@
 .wrapper {
   padding: 20px;
 }
+
+.card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: solid 1px black;
+  box-shadow: 0px 4px 4px rgba(0, 4, 4, 0.25);
+}

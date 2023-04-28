@@ -3,16 +3,10 @@ import React from "react";
 import Card from "../UI/Card";
 import classes from "./TechnicalSkills.module.css";
 
-const cardStyles = {
-  paddingTop: "30px",
-  paddingBottom: "30px",
-  border: "solid 1px black",
-  boxShadow: "0px 4px 4px rgba(0, 4, 4, 0.25)",
-};
 
 const TechnicalSkills = () => {
   return (
-    <Card style={cardStyles}>
+    <Card className={classes.card}>
       <input
         type="text"
         defaultValue="Languages"
