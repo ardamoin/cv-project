@@ -1,0 +1,31 @@
+.selector {
+  display: flex;
+  transition: 100ms;
+}
+
+.selector:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  width: 57px;
+  height: 57px;
+  z-index: 1;
+  position: relative;
+}
+
+.logo-input {
+  color: rgba(0, 0, 0, 0);
+  width: 57px;
+  z-index: 10;
+  position: absolute;
+}
+
+.logo-input::file-selector-button {
+  border: none;
+  width: auto;
+  height: 57px;
+  cursor: pointer;
+  color: transparent;
+  background-color: transparent;
+}
