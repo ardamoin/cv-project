@@ -1,5 +1,6 @@
 .selector {
   display: flex;
+  width: fit-content;
   transition: 100ms;
 }
 
