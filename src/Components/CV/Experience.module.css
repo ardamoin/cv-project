@@ -1,0 +1,163 @@
+.card {
+  width: 769px !important;
+}
+
+.header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience {
+  border: none;
+  font-size: 24px;
+  max-width: 600px;
+  padding-right: 1ch;
+  width: fit-content;
+  text-align: left;
+}
+
+.experience[contenteditable]:empty::before {
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  color: black;
+  content: "Experience";
+}
+
+.experience:hover {
+  cursor: text;
+}
+
+.experience:focus,
+.detail:focus {
+  outline: none !important;
+}
+
+.details {
+  color: #636468;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.detail {
+  border: none;
+  font-size: 14px;
+  max-width: 160px;
+  color: #636468;
+  width: fit-content;
+  text-align: left;
+  cursor: text;
+}
+
+.bullet {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.company[contenteditable]:empty::before {
+  font-family: Helvetica, sans-serif;
+  color: #636468;
+  content: "Company";
+}
+
+.location[contenteditable]:empty::before {
+  font-family: Helvetica, sans-serif;
+  color: #636468;
+  content: "Location";
+}
+.title[contenteditable]:empty::before {
+  font-family: Helvetica, sans-serif;
+  color: #636468;
+  content: "Job Title";
+}
+.date[contenteditable]:empty::before {
+  font-family: Helvetica, sans-serif;
+  color: #636468;
+  content: "Date";
+}
+
+.hr {
+  border-top: 2px solid #70707031;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  width: 749px;
+}
+
+.description {
+    color: black;
+    text-align: left;
+    cursor: text;
+    line-height: 130%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.description[contenteditable]:empty::before {
+    font-family: Helvetica, sans-serif;
+    content: "Ut aut pelit ea vid untotatior seratin imperit omnihilibus endi te cones eos perchil evendion consequ assinventias dolorei cipsae in recus debis nest am nectum quam ipiciet hiliquis aribusciunt. Lupta diciendest unt aturiatior ad ma doles ut dolorrum volupta qui cus, officab oritibus. Da inimil in comnis il es a nitiunde ni ommolorerum volut et idisqui omnietur, nem resed molenimus eari corioreiur sin numet velesequi verspietur.";
+}
+
+.description:focus {
+    outline: none;
+}
+
+.lcs {
+    display: flex;
+    justify-content: space-around;
+    margin: -5px 0;
+}
+
+.lcs-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #636468;
+}
+
+.lcs-item img {
+    width: 40%;
+    height: auto;
+}
+
+.footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 3px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 15px;
+    color: #636468;
+    background-color: #F1F2F6;
+    width: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+.footer img {
+    height: 40px;
+    width: 40px;
+}
+
+.footer-item img {
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
+}
