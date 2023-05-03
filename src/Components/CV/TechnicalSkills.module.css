@@ -1,12 +1,25 @@
-.title {
+.languages,
+.technologies {
   font-family: Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: black;
   border: none;
+  cursor: text;
+  text-align: left;
+  max-width: 230px;
 }
 
-.title:focus,
+.languages[contenteditable]:empty::before {
+  content: "Languages";
+}
+
+.technologies[contenteditable]:empty::before {
+  content: "Technologies";
+}
+
+.languages:focus,
+.technologies:focus,
 .skills:focus {
   outline: none !important;
 }

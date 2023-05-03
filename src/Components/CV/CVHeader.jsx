@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import classes from "./CVHeader.module.css";
 
@@ -7,27 +7,19 @@ import zuck from "../../Assets/zuck.png";
 import loupe from "../../Assets/loupe.svg";
 
 const CVHeader = () => {
-  const [focused, setFocused] = useState(false);
-
-  const setToFocused = () => {
-    setFocused(true);
-  };
-
-  const setToUnfocused = () => {
-    setFocused(false);
-  };
 
   return (
     <div className={classes["cv-header"]}>
       <img alt="fb logo" src={fbIcon} className={classes["fb-icon"]} />
-      <span className={`${classes["job-title"]} ${focused && classes.focus}`}>
+      <span className={classes["job-title"]}>
         <img src={loupe} alt="loupe" />
-        <input
+        <span
+          className={classes["title-span"]}
           type="text"
           placeholder="Job Title"
-          onFocus={setToFocused}
-          onBlur={setToUnfocused}
-        ></input>
+          role="textbox"
+          contentEditable
+        />
       </span>
       <img
         alt="profile pic"

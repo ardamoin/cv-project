@@ -9,15 +9,28 @@
   height: 84px;
 }
 
-.name {
+.name-wrapper {
+  display: flex;
+  align-items: center;
   border-radius: 50px;
   border-style: none;
   background-color: #f1f2f6;
-  height: 49px;
+  min-height: 49px;
   width: 653px;
   padding-left: 20px;
   font-size: 25px;
   font-family: Helvetica, sans-serif;
+}
+
+.name {
+  color: #636468;
+  max-width: 650px;
+  cursor: text;
+  text-align: left;
+}
+
+.name[contenteditable]:empty::before {
+  content: "Full name";
 }
 
 .hr {
@@ -27,12 +40,6 @@
   border-left: none;
   width: 749px;
 }
-
-/* span {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-} */
 
 .detail {
   display: flex;
@@ -46,16 +53,35 @@
   justify-content: space-between;
 }
 
-.info {
+.info-location, .info-phone, .info-email {
   border-style: none;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: #636468;
   width: 100%;
+  cursor: text;
+  text-align: left;
+  max-width: 200px;
+}
+
+.info-email {
+  margin-left: 5px;
+}
+
+.info-location[contenteditable]:empty::before {
+  content: "City, State Zip";
+}
+
+.info-phone[contenteditable]:empty::before {
+  content: "(206) 555-5555";
+}
+
+.info-email[contenteditable]:empty::before {
+  content: "name@email.com";
 }
 
 .name:focus,
-.info:focus {
+.info-location:focus, .info-phone:focus, .info-email:focus {
   outline: none !important;
 }

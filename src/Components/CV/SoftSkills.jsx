@@ -6,7 +6,7 @@ import classes from "./SoftSkills.module.css";
 const SoftSkills = () => {
   return (
     <Card>
-      <input className={classes.title} type="text" placeholder="Soft Skills"/>
+      <span className={classes.title} contentEditable role="textbox"/>
       <textarea
         className={classes.skills}
         name="softSkills"

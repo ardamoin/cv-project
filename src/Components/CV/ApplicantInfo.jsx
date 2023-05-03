@@ -13,35 +13,32 @@ const ApplicantInfo = (props) => {
     <Card>
       <span className={classes.fullname}>
         <img src={zuck} alt="profile pic" className={classes.zuck} />
-        <input type="text" placeholder="Full name" className={classes.name} />
+        <span className={classes["name-wrapper"]}><span className={classes.name} contentEditable role="textbox"/></span>
       </span>
       <hr className={classes.hr}/>
       <div className={classes['info-wrapper']}>
           <span className={classes.detail}>
             <img src={location} alt="location icon" className={classes.location} />
-            <input
-              type="text"
-              placeholder="City, State Zip"
-              className={classes.info}
-              maxLength="26"
+            <span
+              className={classes["info-location"]}
+              contentEditable
+              role="textbox"
             />
           </span>
           <span className={classes.detail}>
             <img src={phone} alt="phone icon" className={classes.phone} />
-            <input
-              type="text"
-              placeholder="(206) 555-5555"
-              className={classes.info}
-              maxLength="26"
+            <span
+              className={classes["info-phone"]}
+              contentEditable
+              role="textbox"
             />
           </span>
           <span className={classes.detail}>
             <img src={email} alt="email icon" className={classes.email} />
-            <input
-              type="text"
-              placeholder="name@email.com"
-              className={classes.info}
-              maxLength="26"
+            <span
+              className={classes["info-email"]}
+              contentEditable
+              role="textbox"
             />
           </span>
       </div>

@@ -7,10 +7,10 @@ import classes from "./TechnicalSkills.module.css";
 const TechnicalSkills = () => {
   return (
     <Card className={classes.card}>
-      <input
-        type="text"
-        defaultValue="Languages"
-        className={classes.title}
+      <span
+        className={classes.languages}
+        contentEditable
+        role="textbox"
       />
       <br />
       <textarea
@@ -25,10 +25,10 @@ const TechnicalSkills = () => {
       ></textarea>
       <hr className={classes.hr} />
       <br />
-      <input
-        type="text"
-        defaultValue="Technologies"
-        className={classes.title}
+      <span
+        className={classes.technologies}
+        contentEditable
+        role="textbox"
       />
       <br />
       <textarea
