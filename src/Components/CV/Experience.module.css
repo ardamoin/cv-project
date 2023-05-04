@@ -1,5 +1,20 @@
 .card {
   width: 769px !important;
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  height: 20px;
+  width: auto;
+  right: 15px;
+  top: 15px;
+  opacity: 25%;
+  transition: 300ms;
+}
+
+.delete:hover {
+  opacity: 65%;
 }
 
 .header {

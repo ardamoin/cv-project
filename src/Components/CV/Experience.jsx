@@ -9,11 +9,13 @@ import like from "../../Assets/like.svg";
 import share from "../../Assets/share.svg";
 import comment from "../../Assets/comment.svg";
 import smile from "../../Assets/smile.svg";
+import deleteBtn from "../../Assets/deleteBtn.svg";
 import zuck from "../../Assets/zuck.png";
 
 const Experience = () => {
   return (
     <Card className={classes.card}>
+      <img src={deleteBtn} alt="delete button" className={classes.delete}/>
       <span className={classes.header}>
         <LogoSelector />
         <span className={classes["header-text"]}>
