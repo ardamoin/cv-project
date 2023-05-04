@@ -1,4 +1,5 @@
 import React from "react";
+import { Tooltip } from "react-tooltip";
 
 import LogoSelector from "../UI/LogoSelector";
 import classes from "./Experience.module.css";
@@ -13,9 +14,22 @@ import deleteBtn from "../../Assets/deleteBtn.svg";
 import zuck from "../../Assets/zuck.png";
 
 const Experience = () => {
+  const deleteHandler = (event) => {
+    event.target.parentElement.remove();
+  };
+
   return (
     <Card className={classes.card}>
-      <img src={deleteBtn} alt="delete button" className={classes.delete}/>
+      <img
+        src={deleteBtn}
+        alt="delete button"
+        className={classes.delete}
+        onClick={deleteHandler}
+        data-tooltip-id="delete-exp-tooltip"
+        data-tooltip-content="Delete experience"
+        data-tooltip-place="top"
+      />
+      <Tooltip id="delete-exp-tooltip" />
       <span className={classes.header}>
         <LogoSelector />
         <span className={classes["header-text"]}>
