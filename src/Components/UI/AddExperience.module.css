@@ -1,0 +1,10 @@
+.add-btn {
+    height: 40px;
+    width: auto;
+    opacity: 25%;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    opacity: 65%;
+  }
