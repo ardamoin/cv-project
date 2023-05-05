@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import classes from "./CV.module.css";
 import CVHeader from "./CVHeader";
@@ -7,8 +7,17 @@ import Education from "./Education";
 import ApplicantInfo from "./ApplicantInfo";
 import TechnicalSkills from "./TechnicalSkills";
 import SoftSkills from "./SoftSkills";
+import AddExperience from "../UI/AddExperience";
 
 const CV = () => {
+  const[experiences, setExperiences] = useState([]);
+
+  const handleAddExperience = () => {
+    setExperiences((prevExperiences) => {
+      return [...prevExperiences, <Experience key={Date.now()}/>]
+    })
+  };
+
   return (
     <div className={classes.CV}>
       <CVHeader />
@@ -22,7 +31,9 @@ const CV = () => {
           <Experience />
           <Experience />
           <Experience />
+          {experiences.map((experience) => experience)}
           <Education />
+          <AddExperience onAddExperience={handleAddExperience} />
         </div>
       </div>
     </div>
