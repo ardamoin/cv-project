@@ -11,7 +11,7 @@ import share from "../../Assets/share.svg";
 import comment from "../../Assets/comment.svg";
 import smile from "../../Assets/smile.svg";
 import deleteBtn from "../../Assets/deleteBtn.svg";
-import zuck from "../../Assets/zuck.png";
+import ProfilePicSelector from "../UI/ProfilePicSelector";
 
 const Experience = () => {
   const deleteHandler = (event) => {
@@ -91,7 +91,7 @@ const Experience = () => {
       </span>
       <hr className={classes.hr} />
       <span className={classes.footer}>
-        <img src={zuck} alt="zuck" />
+        <ProfilePicSelector height="40px" width="40px"/>
         <div className={classes["footer-item"]}>
           Write a comment...
           <img src={smile} alt="smile" />

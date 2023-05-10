@@ -4,11 +4,6 @@
   gap: 10px;
 }
 
-.zuck {
-  width: 84px;
-  height: 84px;
-}
-
 .name-wrapper {
   display: flex;
   align-items: center;
@@ -53,7 +48,9 @@
   justify-content: space-between;
 }
 
-.info-location, .info-phone, .info-email {
+.info-location,
+.info-phone,
+.info-email {
   border-style: none;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
@@ -82,6 +79,8 @@
 }
 
 .name:focus,
-.info-location:focus, .info-phone:focus, .info-email:focus {
+.info-location:focus,
+.info-phone:focus,
+.info-email:focus {
   outline: none !important;
 }

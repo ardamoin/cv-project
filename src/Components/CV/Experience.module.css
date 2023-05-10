@@ -112,68 +112,63 @@
 }
 
 .description {
-    color: black;
-    text-align: left;
-    cursor: text;
-    line-height: 130%;
-    margin-top: 10px;
-    margin-bottom: 5px;
+  color: black;
+  text-align: left;
+  cursor: text;
+  line-height: 130%;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .description[contenteditable]:empty::before {
-    font-family: Helvetica, sans-serif;
-    content: "Ut aut pelit ea vid untotatior seratin imperit omnihilibus endi te cones eos perchil evendion consequ assinventias dolorei cipsae in recus debis nest am nectum quam ipiciet hiliquis aribusciunt. Lupta diciendest unt aturiatior ad ma doles ut dolorrum volupta qui cus, officab oritibus. Da inimil in comnis il es a nitiunde ni ommolorerum volut et idisqui omnietur, nem resed molenimus eari corioreiur sin numet velesequi verspietur.";
+  font-family: Helvetica, sans-serif;
+  content: "Ut aut pelit ea vid untotatior seratin imperit omnihilibus endi te cones eos perchil evendion consequ assinventias dolorei cipsae in recus debis nest am nectum quam ipiciet hiliquis aribusciunt. Lupta diciendest unt aturiatior ad ma doles ut dolorrum volupta qui cus, officab oritibus. Da inimil in comnis il es a nitiunde ni ommolorerum volut et idisqui omnietur, nem resed molenimus eari corioreiur sin numet velesequi verspietur.";
 }
 
 .description:focus {
-    outline: none;
+  outline: none;
 }
 
 .lcs {
-    display: flex;
-    justify-content: space-around;
-    margin: -5px 0;
+  display: flex;
+  justify-content: space-around;
+  margin: -5px 0;
 }
 
 .lcs-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
-    color: #636468;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #636468;
 }
 
 .lcs-item img {
-    width: 40%;
-    height: auto;
+  width: 40%;
+  height: auto;
 }
 
 .footer {
-    display: flex;
-    gap: 10px;
-    margin-top: 3px;
+  display: flex;
+  gap: 10px;
+  margin-top: 3px;
 }
 
 .footer-item {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    font-size: 15px;
-    color: #636468;
-    background-color: #F1F2F6;
-    width: 700px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 20px;
-}
-
-.footer img {
-    height: 40px;
-    width: 40px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-size: 15px;
+  color: #636468;
+  background-color: #f1f2f6;
+  width: 700px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
 }
 
 .footer-item img {
-    height: 20px;
-    width: 20px;
-    margin-left: auto;
+  height: 20px;
+  width: 20px;
+  margin-left: auto;
 }

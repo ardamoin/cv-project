@@ -3,11 +3,10 @@ import React from "react";
 import classes from "./CVHeader.module.css";
 
 import fbIcon from "../../Assets/fb-icon.svg";
-import zuck from "../../Assets/zuck.png";
 import loupe from "../../Assets/loupe.svg";
+import ProfilePicSelector from "../UI/ProfilePicSelector";
 
 const CVHeader = () => {
-
   return (
     <div className={classes["cv-header"]}>
       <img alt="fb logo" src={fbIcon} className={classes["fb-icon"]} />
@@ -21,11 +20,9 @@ const CVHeader = () => {
           contentEditable
         />
       </span>
-      <img
-        alt="profile pic"
-        src={zuck}
-        className={classes["profile-pic"]}
-      ></img>
+      <span className={classes["profile-pic"]}>
+        <ProfilePicSelector height="47px" width="47px" />
+      </span>
       <span className={classes.name}>Name</span>
     </div>
   );
