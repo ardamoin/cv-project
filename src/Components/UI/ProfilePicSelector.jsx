@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Tooltip } from "react-tooltip";
+import PPContext from "../../context/pp-context";
 
 import classes from "./ProfilePicSelector.module.css";
 
-import zuck from "../../Assets/zuck.png";
-
 const ProfilePicSelector = ({ height, width }) => {
-  const [imageSrc, setImageSrc] = useState(null);
+  const { imageSrc, setImageSrc } = useContext(PPContext);
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
@@ -33,18 +32,10 @@ const ProfilePicSelector = ({ height, width }) => {
       />
 
       <Tooltip id="pp-tooltip" />
-      
+
       {imageSrc && (
         <img
           src={imageSrc}
-          alt="Profile pic"
-          className={classes.pp}
-          style={imgHeightWidth}
-        />
-      )}
-      {!imageSrc && (
-        <img
-          src={zuck}
           alt="Profile pic"
           className={classes.pp}
           style={imgHeightWidth}
