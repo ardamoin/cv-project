@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Tooltip } from "react-tooltip";
 
 import classes from "./LogoSelector.module.css";
 import silhouette from "../../Assets/silhouette.png";
@@ -22,7 +23,13 @@ const LogoSelector = (props) => {
         accept="image/*"
         onChange={handleImageChange}
         className={classes["logo-input"]}
+        data-tooltip-id="logo-tooltip"
+        data-tooltip-content="Select logo"
+        data-tooltip-place="left"
       />
+
+      <Tooltip id="logo-tooltip" />
+
       {imageSrc && (
         <img src={imageSrc} alt="Company logo" className={classes.logo} />
       )}

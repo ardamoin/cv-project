@@ -4,10 +4,6 @@
   transition: 100ms;
 }
 
-.selector:hover {
-    background-color: rgba(0, 0, 0, 0.15);
-}
-
 .logo {
   width: 57px;
   height: 57px;
