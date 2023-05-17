@@ -9,6 +9,7 @@ const AddExperience = (props) => {
   return (
     <>
       <img
+        id="add-delete-btn"
         src={addBtn}
         alt="add experience button"
         className={classes["add-btn"]}

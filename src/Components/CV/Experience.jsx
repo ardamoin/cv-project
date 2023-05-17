@@ -21,6 +21,7 @@ const Experience = () => {
   return (
     <Card className={classes.card}>
       <img
+        id="add-delete-btn"
         src={deleteBtn}
         alt="delete button"
         className={classes.delete}
@@ -91,7 +92,7 @@ const Experience = () => {
       </span>
       <hr className={classes.hr} />
       <span className={classes.footer}>
-        <ProfilePicSelector height="40px" width="40px"/>
+        <ProfilePicSelector height="40px" width="40px" />
         <div className={classes["footer-item"]}>
           Write a comment...
           <img src={smile} alt="smile" />

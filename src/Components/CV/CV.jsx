@@ -12,7 +12,7 @@ import TechnicalSkills from "./TechnicalSkills";
 import SoftSkills from "./SoftSkills";
 import AddExperience from "../UI/AddExperience";
 
-const CV = () => {
+const CV = (props) => {
   const [experiences, setExperiences] = useState([]);
   const [profilePic, setProfilePic] = useState(zuck);
 
@@ -23,7 +23,7 @@ const CV = () => {
   };
 
   return (
-    <div className={classes.CV}>
+    <div className={classes.CV} id={props.id}>
       <PPContext.Provider
         value={{
           imageSrc: profilePic,
