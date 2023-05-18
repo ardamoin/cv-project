@@ -30,6 +30,7 @@
 }
 
 .experience {
+  font-weight: bold;
   border: none;
   font-size: 24px;
   max-width: 600px;
@@ -39,7 +40,6 @@
 }
 
 .experience[contenteditable]:empty::before {
-  font-weight: bold;
   font-family: Helvetica, sans-serif;
   color: black;
   content: "Experience";

@@ -31,6 +31,9 @@
   line-height: 23px;
   border: none;
   resize: none;
+  min-width: 227px;
+  max-width: 227px;
+  text-align: left;
 }
 
 .hr {

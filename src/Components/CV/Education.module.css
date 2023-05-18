@@ -2,21 +2,21 @@
   width: 769px !important;
 }
 .title {
-    text-align: left;
-    margin-top: -1px;
+  text-align: left;
+  margin-top: -1px;
 }
 
 .education {
-    font-family: Helvetica, sans-serif;
-    color: black;
-    text-align: left;
+  font-family: Helvetica, sans-serif;
+  color: #636468;
+  text-align: left;
+  cursor: text;
 }
 
 .education[contenteditable]:empty::before {
-  color: #636468;
   content: "Degree, College Name • Graduation Date • GPA";
 }
 
 .education:focus {
-    outline: none;
+  outline: none;
 }

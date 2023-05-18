@@ -28,4 +28,7 @@
   border: none;
   resize: none;
   margin-bottom: 10px;
+  min-width: 229px;
+  max-width: 229px;
+  text-align: left;
 }

@@ -3,44 +3,42 @@ import React from "react";
 import Card from "../UI/Card";
 import classes from "./TechnicalSkills.module.css";
 
-
 const TechnicalSkills = () => {
   return (
     <Card className={classes.card}>
-      <span
-        className={classes.languages}
-        contentEditable
-        role="textbox"
-      />
+      <span className={classes.languages} contentEditable role="textbox" />
       <br />
-      <textarea
-        name="languages"
-        id="languages"
-        cols="25"
-        rows="7"
-        placeholder={
-          "Java / C#\nJavaScript / TypeScript\nPython\nC / C++\nBash / PowerShell\nHTML / CSS / SQL"
-        }
-        className={classes.skills}
-      ></textarea>
+      <span contentEditable role="textbox" className={classes.skills}>
+        Java / C#
+        <br />
+        JavaScript / TypeScript
+        <br />
+        Python
+        <br />C / C++
+        <br />
+        Bash / PowerShell
+        <br />
+        HTML / CSS / SQL
+      </span>
       <hr className={classes.hr} />
       <br />
-      <span
-        className={classes.technologies}
-        contentEditable
-        role="textbox"
-      />
+      <span className={classes.technologies} contentEditable role="textbox" />
       <br />
-      <textarea
-        name="technologies"
-        id="technologies"
-        cols="25"
-        rows="7"
-        placeholder={
-          "Azure & AWS\nReact / Redux\n.Net\nMongoDb\nNode.js / Express.js\nNetlify (AWS Lambda)\nSocket.io"
-        }
-        className={classes.skills}
-      ></textarea>
+      <span contentEditable role="textbox" className={classes.skills}>
+        Azure & AWS
+        <br />
+        React / Redux
+        <br />
+        .Net
+        <br />
+        MongoDb
+        <br />
+        Node.js / Express.js
+        <br />
+        Netlify (AWS Lambda)
+        <br />
+        Socket.io
+      </span>
     </Card>
   );
 };

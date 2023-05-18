@@ -6,17 +6,20 @@ import classes from "./SoftSkills.module.css";
 const SoftSkills = () => {
   return (
     <Card>
-      <span className={classes.title} contentEditable role="textbox"/>
-      <textarea
-        className={classes.skills}
-        name="softSkills"
-        id="softSkills"
-        cols="25"
-        rows="6"
-        placeholder={
-          "Humility\nTeamwork\nLeadership\nSelf-Starter\nProblem Solving\nProject Management"
-        }
-      ></textarea>
+      <span className={classes.title} contentEditable role="textbox" />
+      <span className={classes.skills} contentEditable role="textbox">
+        Humility
+        <br />
+        Teamwork
+        <br />
+        Leadership
+        <br />
+        Self-Starter
+        <br />
+        Problem Solving
+        <br />
+        Project Management
+      </span>
     </Card>
   );
 };
