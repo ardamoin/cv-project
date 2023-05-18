@@ -14,7 +14,12 @@ const ApplicantInfo = (props) => {
       <span className={classes.fullname}>
         <ProfilePicSelector height="84px" width="84px" />
         <span className={classes["name-wrapper"]}>
-          <span className={classes.name} contentEditable role="textbox" />
+          <span
+            className={classes.name}
+            contentEditable
+            role="textbox"
+            onInput={props.onUserNameChange}
+          />
         </span>
       </span>
       <hr className={classes.hr} />

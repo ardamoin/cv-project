@@ -6,7 +6,7 @@ import fbIcon from "../../Assets/fb-icon.svg";
 import loupe from "../../Assets/loupe.svg";
 import ProfilePicSelector from "../UI/ProfilePicSelector";
 
-const CVHeader = () => {
+const CVHeader = (props) => {
   return (
     <div className={classes["cv-header"]}>
       <img alt="fb logo" src={fbIcon} className={classes["fb-icon"]} />
@@ -23,7 +23,7 @@ const CVHeader = () => {
       <span className={classes["profile-pic"]}>
         <ProfilePicSelector height="47px" width="47px" />
       </span>
-      <span className={classes.name}>Name</span>
+      <span className={classes.name}>{props.userName}</span>
     </div>
   );
 };

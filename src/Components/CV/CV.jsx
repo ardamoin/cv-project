@@ -15,6 +15,20 @@ import AddExperience from "../UI/AddExperience";
 const CV = (props) => {
   const [experiences, setExperiences] = useState([]);
   const [profilePic, setProfilePic] = useState(zuck);
+  const [userName, setUserName] = useState("Name");
+
+  const handleUserNameChange = (event) => {
+    const fullUserName = event.target.textContent;
+    setUserName(fullUserName.trim());
+
+    if (fullUserName.split(" ").length > 1) {
+      setUserName(fullUserName.split(" ")[0].trim());
+    }
+
+    if (fullUserName === "") {
+      setUserName("Name");
+    }
+  };
 
   const handleAddExperience = () => {
     setExperiences((prevExperiences) => {
@@ -30,14 +44,14 @@ const CV = (props) => {
           setImageSrc: setProfilePic,
         }}
       >
-        <CVHeader />
+        <CVHeader userName={userName} />
         <div className={classes["cv-body"]}>
           <div className={classes.sidebar}>
             <TechnicalSkills />
             <SoftSkills />
           </div>
           <div className={classes.main}>
-            <ApplicantInfo />
+            <ApplicantInfo onUserNameChange={handleUserNameChange} />
             <Experience />
             <Experience />
             <Experience />
