@@ -39,8 +39,8 @@ CV Project is a web application built with React that allows users to create and
 - HTML/CSS
 - JavaScript
 - Bootstrap
-- React-Router-Dom
-- React-To-Pdf
+- jsPDF
+- html2canvas
 
 ## Live Demo
 
