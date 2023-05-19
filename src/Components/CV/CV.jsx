@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import PPContext from "../../context/pp-context";
 import zuck from "../../Assets/zuck.png";
@@ -16,6 +16,10 @@ const CV = (props) => {
   const [experiences, setExperiences] = useState([]);
   const [profilePic, setProfilePic] = useState(zuck);
   const [userName, setUserName] = useState("Name");
+
+  useEffect(() => {
+    console.clear();
+  }, []);
 
   const handleUserNameChange = (event) => {
     const fullUserName = event.target.textContent;
